@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: blog
+      profile: dev
+      label: master

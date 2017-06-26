@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.3.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
     <groupId>com.carl</groupId>
     <artifactId>spring-starter</artifactId>
@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-config-server</module>
+        <module>spring-blog</module>
     </modules>
 
     <dependencies>
@@ -28,6 +29,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <plugins>
             <plugin>
@@ -39,7 +52,6 @@
 
 
     <properties>
-        <spring-cloud-starter-parent-version>1.0.1.RELEASE</spring-cloud-starter-parent-version>
         <java.version>1.8</java.version>
     </properties>
 </project>
