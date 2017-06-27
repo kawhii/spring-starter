@@ -15,6 +15,7 @@
     <modules>
         <module>spring-config-server</module>
         <module>spring-blog</module>
+        <module>spring-eureka</module>
     </modules>
 
     <dependencies>
