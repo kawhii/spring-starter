@@ -1,6 +1,13 @@
+
 spring:
   cloud:
     config:
       name: blog
       profile: development
       label: master
+  application:
+    name: blog
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
