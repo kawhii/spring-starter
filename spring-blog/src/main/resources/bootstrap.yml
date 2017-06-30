@@ -7,7 +7,16 @@ spring:
       label: master
   application:
     name: blog
+
+
+#使用eureka发现服务，采用@FeignClient注解进行发现服务
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+#可以映射到您的Web应用程序，/api/users映射到用户服务，/api/shop映射到商店服务,
+#“/api/*”的http呼叫转发到“api”服务（例如“/api/101”转发到“/101”）。
+zuul:
+  routes:
+    blog: /api/*
