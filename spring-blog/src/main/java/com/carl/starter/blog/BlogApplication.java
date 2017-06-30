@@ -14,7 +14,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * 版权所有.(c)2008-2017.广州市森锐科技股份有限公司
  */
 
-@EnableAutoConfiguration
 @EnableEurekaClient
 @EnableFeignClients
 @EnableZuulProxy
