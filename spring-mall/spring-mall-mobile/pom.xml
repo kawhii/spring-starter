@@ -2,21 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!--商城-->
+    <!--商城移动端-->
     <parent>
-        <artifactId>spring-starter</artifactId>
+        <artifactId>spring-mall</artifactId>
         <groupId>com.carl</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-mall</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-mall-pc</module>
-        <module>spring-mall-mobile</module>
-    </modules>
+    <artifactId>spring-mall-mobile</artifactId>
 
 
 </project>
