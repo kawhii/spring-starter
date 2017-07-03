@@ -32,8 +32,8 @@ public class MailApplicationTest {
             public void prepare(MimeMessage mimeMessage) throws Exception {
 
                 mimeMessage.setRecipient(Message.RecipientType.TO,
-                        new InternetAddress("13680421979@163.com"));
-                mimeMessage.setFrom(new InternetAddress("756884434@qq.com"));
+                        new InternetAddress("huangwb@sunrizetech.com"));
+                mimeMessage.setFrom(new InternetAddress("13680421979@163.com"));
                 mimeMessage.setText("spring test send email.");
             }
         };
