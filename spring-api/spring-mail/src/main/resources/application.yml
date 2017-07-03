@@ -1,0 +1,10 @@
+spring:
+  mail:
+    properties:
+      mail:
+        smtp:
+          auth: true
+    host: smtp.163.com
+    port: 25
+    username: 13680421979@163.com
+    password: 123123123x
