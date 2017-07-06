@@ -1,6 +1,7 @@
 package com.carl.starter.blog.modules.index.ctrl;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 版权所有.(c)2008-2017.广州市森锐科技股份有限公司
  */
 @RestController
+@RefreshScope
 public class IndexController {
     @Value("${blog_name:carl!}")
     private String name;
