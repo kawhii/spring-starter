@@ -15,6 +15,9 @@ spring:
     port: 5672
     username: blog
     password: 888888
+  redis:
+    host: 192.168.100.249
+    port: 9379
 
 #使用eureka发现服务，采用@FeignClient注解进行发现服务
 eureka:
@@ -27,3 +30,5 @@ eureka:
 zuul:
   routes:
     blog: /api/*
+
+
