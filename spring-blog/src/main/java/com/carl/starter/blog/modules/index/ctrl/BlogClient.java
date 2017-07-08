@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(name = "blog")
 public interface BlogClient {
     //获取服务为blog的应用名字的/的mapping调用
-    @RequestMapping("/")
+    @RequestMapping("/index/")
     String home();
 }

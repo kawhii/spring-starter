@@ -18,6 +18,8 @@ spring:
   redis:
     host: 192.168.100.249
     port: 9379
+  thymeleaf:
+    cache: false
 
 #使用eureka发现服务，采用@FeignClient注解进行发现服务
 eureka:
@@ -30,5 +32,3 @@ eureka:
 zuul:
   routes:
     blog: /api/*
-
-
