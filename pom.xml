@@ -19,6 +19,7 @@
         <module>spring-api</module>
         <module>spring-mall</module>
         <module>spring-auth-center</module>
+        <module>spring-sso</module>
     </modules>
 
     <dependencies>
