@@ -18,6 +18,7 @@
         <module>spring-eureka</module>
         <module>spring-api</module>
         <module>spring-mall</module>
+        <module>spring-auth-center</module>
     </modules>
 
     <dependencies>
