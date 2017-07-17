@@ -69,5 +69,10 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <docker.image.prefix>springcloud</docker.image.prefix>
+        <docker.host>http://192.168.100.249:2375</docker.host>
+        <docker.targetPath></docker.targetPath>
+        <docker.dockerDirectory>${project.basedir}${file.separator}src/main/docker</docker.dockerDirectory>
+        <docker.imageName>${docker.image.prefix}/${project.artifactId}:${project.version}</docker.imageName>
     </properties>
 </project>
