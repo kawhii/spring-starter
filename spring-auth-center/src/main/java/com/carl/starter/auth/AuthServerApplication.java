@@ -64,10 +64,14 @@ public class AuthServerApplication extends WebMvcConfigurerAdapter {
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
-            http.userDetailsService(username -> {
-                List<GrantedAuthority> authorityList = new ArrayList<>();
-                authorityList.add(new SimpleGrantedAuthority("admin"));
-                return new User(username, "123",authorityList );
+            //test
+            http.userDetailsService(new UserDetailsService() {
+                @Override
+                public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+                    List<GrantedAuthority> authorityList = new ArrayList<>();
+                    authorityList.add(new SimpleGrantedAuthority("admin"));
+                    return new User(username, "123",authorityList );
+                }
             });
             http.formLogin().loginPage("/login").permitAll().and().authorizeRequests()
                     .anyRequest().authenticated();
