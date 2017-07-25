@@ -71,6 +71,7 @@ public class AuthServerApplication extends WebMvcConfigurerAdapter {
             });
             http.formLogin().loginPage("/login").permitAll().and().authorizeRequests()
                     .anyRequest().authenticated();
+            //test stash
         }
 
         @Override
