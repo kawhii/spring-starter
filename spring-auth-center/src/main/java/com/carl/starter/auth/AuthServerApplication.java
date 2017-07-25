@@ -64,6 +64,7 @@ public class AuthServerApplication extends WebMvcConfigurerAdapter {
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
+            //test
             http.userDetailsService(new UserDetailsService() {
                 @Override
                 public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
