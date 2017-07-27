@@ -38,7 +38,7 @@ public class MailApplicationTest {
             }
         };
 
-        this.mailSender.send(preparator);
+        //this.mailSender.send(preparator);
     }
 
 }
