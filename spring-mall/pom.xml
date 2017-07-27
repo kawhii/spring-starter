@@ -14,8 +14,6 @@
     <artifactId>spring-mall</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-mall-pc</module>
-        <module>spring-mall-mobile</module>
     </modules>
 
 
