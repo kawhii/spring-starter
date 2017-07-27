@@ -64,7 +64,6 @@ public class AuthServerApplication extends WebMvcConfigurerAdapter {
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
-            //test
             http.userDetailsService(username -> {
                 List<GrantedAuthority> authorityList = new ArrayList<>();
                 authorityList.add(new SimpleGrantedAuthority("admin"));
